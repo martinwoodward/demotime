@@ -5,5 +5,8 @@ workflow "Create Issue" {
 
 action "echo" {
   uses = "martinwoodward/gh-actions/echo@master"
-  env = {}
+  env = {
+    MY_NAME = "Martin"
+  }
+  secrets = ["MartinsPIN"]
 }
